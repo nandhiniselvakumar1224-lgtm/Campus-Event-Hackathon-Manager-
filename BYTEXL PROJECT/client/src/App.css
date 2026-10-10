@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fc;
+  color: #19233c;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 64px 24px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #172554, #4f46e5, #7c3aed);
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #a5b4fc;
+}
+
+.hero h1 {
+  margin: 16px 0;
+  font-size: clamp(32px, 6vw, 54px);
+}
+
+.hero > p:last-child {
+  color: #e0e7ff;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 40px auto;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.section-heading h2 {
+  margin-top: 8px;
+  font-size: 28px;
+}
+
+.event-count,
+.event-tag {
+  background: #e0e7ff;
+  color: #4338ca;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 22px;
+}
+
+.event-card,
+.empty-state {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 25px rgba(31, 41, 55, 0.05);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-icon {
+  font-size: 28px;
+  color: #7c3aed;
+}
+
+.event-card h3 {
+  font-size: 21px;
+  margin: 24px 0 12px;
+}
+
+.description,
+.event-info {
+  color: #64748b;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.event-info {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 20px;
+  padding-top: 12px;
+  font-size: 14px;
+}
+
+.message,
+.empty-state {
+  text-align: center;
+  padding: 32px;
+}
+
+.error {
+  color: #dc2626;
+}
+
+footer {
+  text-align: center;
+  padding: 28px 16px;
+  color: #64748b;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 48px 18px;
+  }
+
+  .section-heading h2 {
+    font-size: 23px;
+  }
+}
+.create-section {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 44px;
+  box-shadow: 0 8px 25px rgba(31, 41, 55, 0.05);
+}
+
+.create-section h2 {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.event-form {
+  display: grid;
+  gap: 14px;
+}
+
+.event-form input,
+.event-form textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  font: inherit;
+  background: white;
+  color: #19233c;
+}
+
+.event-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.event-form label {
+  font-size: 14px;
+  color: #475569;
+}
+
+.event-form button {
+  border: 0;
+  border-radius: 9px;
+  padding: 14px;
+  background: #4f46e5;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.event-form button:hover {
+  background: #4338ca;
+}
+
+.success {
+  col.create-section {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 44px;
+  box-shadow: 0 8px 25px rgba(31, 41, 55, 0.05);
+}
+}
+.register-button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 13px;
+  border: none;
+  border-radius: 9px;
+  background: #4f46e5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background: #4338ca;
+}
+
+.registration-form {
+  margin-top: 20px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.registration-form h3 {
+  margin: 0;
+}
+
+.registration-form p {
+  overflow-wrap: anywhere;
+}
+
+.registration-form select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  background: white;
+  font: inherit;
+}
+
+.registration-form .cancel-button {
+  background: #64748b;
+}
+.success {
+  margin: 20px auto;
+  padding: 16px;
+  border-radius: 10px;
+  background: #dcfce7;
+  color: #166534;
+  text-align: center;
+  font-weight: bold;
+}
+/* Participants Section */
+.participants-list {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f8faff;
+  border: 1px solid #dbe4ff;
+  border-radius: 12px;
+}
+
+.participants-list h3 {
+  color: #253b80;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.participants-list > div {
+  background: #ffffff;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.participants-list p {
+  margin: 6px 0;
+  color: #334155;
+  overflow-wrap: anywhere;
+}
+
+.participants-list strong {
+  color: #1e293b;
+}
